@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #003178;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0d47a1;
+  --color-on-primary-container: #a1bbff;
+  --color-primary-fixed: #d9e2ff;
+  --color-on-primary-fixed: #001945;
+  --color-primary-fixed-dim: #b0c6ff;
+  --color-on-primary-fixed-variant: #00429c;
+
+  --color-secondary: #1b6d24;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a0f399;
+  --color-on-secondary-container: #217128;
+  --color-secondary-fixed: #a3f69c;
+  --color-on-secondary-fixed: #002204;
+  --color-secondary-fixed-dim: #88d982;
+  --color-on-secondary-fixed-variant: #005312;
+
+  --color-tertiary: #1e3843;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #354f5b;
+  --color-on-tertiary-container: #a5c0ce;
+  --color-tertiary-fixed: #cbe7f5;
+  --color-on-tertiary-fixed: #021f29;
+  --color-tertiary-fixed-dim: #afcbd8;
+  --color-on-tertiary-fixed-variant: #304a55;
+
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+  --color-surface: #f8f9fa;
+  --color-on-surface: #191c1d;
+  --color-surface-variant: #e1e3e4;
+  --color-on-surface-variant: #434652;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-dim: #d9dadb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container: #edeeef;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+
+  --color-outline: #737783;
+  --color-outline-variant: #c3c6d4;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-inverse-surface: #2e3132;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-inverse-primary: #b0c6ff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.editorial-asymmetry {
+  margin-right: 1.5rem;
+  margin-left: 0.75rem;
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px rgba(25, 28, 29, 0.06);
+}
